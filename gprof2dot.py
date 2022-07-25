@@ -144,9 +144,9 @@ SAMPLES2 = Event("Samples", 0, add, times)
 # Used only when totalMethod == callstacks
 TOTAL_SAMPLES = Event("Samples", 0, add, times)
 
-TIME = Event("Time", 0.0, add, lambda x: '(' + str(x) + ')')
-TIME_RATIO = Event("Time ratio", 0.0, add, lambda x: '(' + percentage(x) + ')')
-TOTAL_TIME = Event("Total time", 0.0, fail)
+TIME = Event("Time", 0.0, add, lambda x: f'({x:0.2f}s)')
+TIME_RATIO = Event("Time ratio", 0.0, add, lambda x: f'({percentage(x)})')
+TOTAL_TIME = Event("Total time", 0.0, fail, lambda x: f'{x:0.2f}s')
 TOTAL_TIME_RATIO = Event("Total time ratio", 0.0, fail, percentage)
 
 labels = {
