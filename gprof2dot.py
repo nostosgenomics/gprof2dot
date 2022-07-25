@@ -64,7 +64,7 @@ def percentage(p):
     return "%.02f%%" % (p*100.0,)
 
 def seconds(x):
-    return "%.02f%%s" % x
+    return "%.02fs" % x
 
 def add(a, b):
     return a + b
