@@ -149,7 +149,7 @@ TOTAL_SAMPLES = Event("Samples", 0, add, times)
 
 TIME = Event("Time", 0.0, add, lambda x: '(' + seconds(x) + ')')
 TIME_RATIO = Event("Time ratio", 0.0, add, lambda x: '(' + percentage(x) + ')')
-TOTAL_TIME = Event("Total time", 0.0, fail, lambda x: seconds)
+TOTAL_TIME = Event("Total time", 0.0, fail, seconds)
 TOTAL_TIME_RATIO = Event("Total time ratio", 0.0, fail, percentage)
 
 labels = {
